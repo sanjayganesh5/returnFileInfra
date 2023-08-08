@@ -15,12 +15,22 @@ plugins:
 package:
   individually: true
 
+custom:
+  pythonRequirements:
+    layer:
+      description: Python requirements
+      compatibleRuntimes:
+        - python3.10
+      compatibleArchitechtures:
+        - x86_64
+      
 functions:
   returnFile:
     name: return-file-${sls:stage}-lambda # optional, Deployed Lambda name
     package:
       artifact: ../_returnApp/application/serverless.zip
     handler: handler.lambda_handler
+    module: ../_returnApp
     logRetentionInDays: 1
     events:
       - http:
