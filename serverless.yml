@@ -13,7 +13,7 @@ package:
   individually: true
 
 functions:
-  fileDownload:
+  returnFile:
     name: download-file-${sls:stage}-lambda # optional, Deployed Lambda name
     package:
       artifact: ../_returnApp/application/serverless.zip
