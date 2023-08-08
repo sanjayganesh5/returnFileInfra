@@ -19,4 +19,7 @@ functions:
       artifact: ../_returnApp/application/serverless.zip
     handler: handler.lambda_handler
     logRetentionInDays: 1
-    url: true
+    events:
+      - http:
+          path: /returnFile
+          method: get
