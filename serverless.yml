@@ -9,6 +9,9 @@ provider:
   memorySize: 128 # optional, in MB, default is 1024
   timeout: 10 # optional, in seconds, default is 6
 
+plugins:
+  - serverless-python-requirements
+
 package:
   individually: true
 
