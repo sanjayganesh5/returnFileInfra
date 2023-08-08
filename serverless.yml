@@ -12,9 +12,6 @@ provider:
 package:
   individually: true
 
-plugins:
-  - serverless-python-requirements
-
 custom:
   pythonRequirements:
     layer:
