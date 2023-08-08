@@ -17,12 +17,7 @@ package:
 
 custom:
   pythonRequirements:
-    layer:
-      description: Python requirements
-      compatibleRuntimes:
-        - python3.10
-      compatibleArchitechtures:
-        - x86_64
+    layer: true
       
 functions:
   returnFile:
