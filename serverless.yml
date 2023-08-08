@@ -17,7 +17,9 @@ package:
 
 custom:
   pyRequirements:
-    layer: true
+    layer:
+      fileName: ../_returnApp/requirements.txt
+      description: Python Requirements
       
 functions:
   returnFile:
