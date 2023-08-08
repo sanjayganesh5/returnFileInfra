@@ -15,24 +15,12 @@ plugins:
 package:
   individually: true
 
-custom:
-  pythonRequirements:
-    layer:
-      fileName: ../_returnApp/requirements.txt
-      description: Description of what the lambda layer does # optional, Description to publish to AWS
-      compatibleRuntimes: # optional, a list of runtimes this layer is compatible with
-        - python3.10
-      compatibleArchitectures: # optional, a list of architectures this layer is compatible with
-        - x86_64
-
 functions:
   returnFile:
     name: return-file-${sls:stage}-lambda # optional, Deployed Lambda name
     package:
       artifact: ../_returnApp/application/serverless.zip
     handler: handler.lambda_handler
-    layers:
-      - Ref: PythonRequirementsLambdaLayer
     logRetentionInDays: 1
     events:
       - http:
