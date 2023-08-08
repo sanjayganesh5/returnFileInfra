@@ -14,7 +14,7 @@ package:
 
 functions:
   returnFile:
-    name: download-file-${sls:stage}-lambda # optional, Deployed Lambda name
+    name: return-file-${sls:stage}-lambda # optional, Deployed Lambda name
     package:
       artifact: ../_returnApp/application/serverless.zip
     handler: handler.lambda_handler
