@@ -18,7 +18,7 @@ package:
 custom:
   pythonRequirements:
     layer:
-      fileName: ../_returnApp/requirements.txt
+      fileName: /home/ubuntu/agent/_work/r1/a/_returnApp/requirements.txt
       description: Python Requirements
       
 functions:
