@@ -29,6 +29,8 @@ functions:
     package:
       artifact: ../_returnApp/application/serverless.zip
     handler: handler.lambda_handler
+    layers:
+      - Ref: PythonRequirementsLambdaLayer
     logRetentionInDays: 1
     events:
       - http:
