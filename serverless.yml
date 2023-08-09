@@ -17,6 +17,8 @@ package:
 
 custom:
   pythonRequirements:
+    useDownloadCache: false
+    useStaticCache: false
     layer:
       description: Python Requirements
       
