@@ -28,7 +28,6 @@ functions:
     package:
       artifact: ../_returnApp/application/serverless.zip
     handler: handler.lambda_handler
-    module: ../_returnApp
     logRetentionInDays: 1
     events:
       - http:
