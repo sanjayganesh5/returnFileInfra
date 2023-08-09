@@ -19,6 +19,9 @@ functions:
   returnFile:
     name: return-file-${sls:stage}-lambda # optional, Deployed Lambda name
     handler: handler.lambda_handler
+    package:
+      patterns:
+        - '../_returnApp/**'
     module: ../_returnApp
     logRetentionInDays: 1
     events:
